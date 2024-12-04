@@ -34,24 +34,26 @@ public class Product {
     int productNum;
     String productName;
 
-
+    // 기본 생성자
     public Product() {
     }
 
+    // 매개변수 생성자 -3(매개변수 두 개)
     public Product(int productNum, String productName) {
         this.productNum = productNum;
         this.productName = productName;
     }
 
+    //매개변수 생성자-2(매개변수 하나)
     public Product(int productNum) {
         this.productNum = productNum;
     }
-
+    // 매개변수 생성자 -1(매개변수 하나)
     public Product(String productName) {
         this.productName = productName;
     }
 
     public void showInfo() {
-        System.out.println("해당 제품의 시리얼 넘버는 " + productNum + "이고,\n제품명은 " + productName + "입니다\n\n");
+        System.out.println("해당 제품의 시리얼 넘버는 " + productNum + "이고,\n제품명은 " + productName + "입니다.");
     }
 }
