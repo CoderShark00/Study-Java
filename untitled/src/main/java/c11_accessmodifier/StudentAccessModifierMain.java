@@ -5,7 +5,6 @@ import c09_classes.Student;
 public class StudentAccessModifierMain {
     public static void main(String[] args) {
 
-
     StudentAccessModifier student1 = new StudentAccessModifier();
 
     student1.setStudentCode(1822978);
@@ -13,5 +12,8 @@ public class StudentAccessModifierMain {
     student1.setStudentAvg(100.0);
 
     student1.showInfo();
+        System.out.println(student1.getStudentName());
+        System.out.println(student1.getStudentAvg());
+        System.out.println(student1.getStudentCode());
     }
 }
