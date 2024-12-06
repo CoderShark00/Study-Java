@@ -50,8 +50,5 @@ public class ArrayTest04 {
         }
         System.out.println("Sum of even numbers: " + evenSum);
     }
-
-
-
-    }
+}
 
