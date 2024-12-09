@@ -25,5 +25,4 @@ public class ArrayTest06 {
             System.out.print("\n");
         }
     }
-
 }
