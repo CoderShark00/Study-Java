@@ -60,6 +60,7 @@ public class Main {
         remoteController.channelUp();
         remoteController.onPressedChannelUpButton();
 
+        System.out.println("------------------------------");
         remoteController.volumeDown();
         remoteController.onPressedVolumeDownButton();
         remoteController.volumeUp();
