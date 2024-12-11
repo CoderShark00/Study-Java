@@ -5,7 +5,7 @@ package c14_abstraction.interfaces;
  */
 public class PowerButton extends Button{
 
-    boolean status = true;
+    boolean status = false;
 
     @Override
     public void onPressed() {
