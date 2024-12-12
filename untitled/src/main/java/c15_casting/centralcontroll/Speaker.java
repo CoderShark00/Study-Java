@@ -11,4 +11,8 @@ public class Speaker implements Power {
     public void off() {
         System.out.println("Speaker의 전원을 끕니다.");
     }
+
+    public void changeMode(){
+        System.out.println("음색 모드를 바꿨습니다.");
+    }
 }
