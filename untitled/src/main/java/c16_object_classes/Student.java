@@ -1,4 +1,7 @@
 package c16_object_classes;
+
+import java.util.Objects;
+
 /*
     toString(), equals(), hashcode()
 
@@ -23,4 +26,51 @@ package c16_object_classes;
 
  */
 public class Student {
+
+    private String name;
+    private int studentId;
+
+    //AllArgsConstructor
+
+    public Student(String name, int studentId) {
+        this.name = name;
+        this.studentId = studentId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getStudentId() {
+        return studentId;
+    }
+
+    public void setStudentId(int studentId) {
+        this.studentId = studentId;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return studentId == student.studentId && Objects.equals(name, student.name);
+    }
+
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, studentId);
+    }
+
+    @Override
+    public String toString() {
+        return "해당 학생의 이름은 " + name + "이고, 학번은 " + studentId + "입니다.";
+    }
+
+    // equals()메서드를 오버라이딩해서 두학생 객체가 이름과 학번이 모두 같으면 true를 반환하도록 구현해야함.
+    // hasCode()메서드를 오버라이드하여, 이름과 학번을 기반으로 한 해시 코드를 반환하도록 구현해야함.
 }
